@@ -9,3 +9,8 @@
 ;; Color mode
 (require 'color-theme)
 (color-theme-clarity)
+
+;; Dired-mode
+(setq dired-mode-hook
+      '(lambda ()
+	 (define-key dired-mode-map "*" 'dired-up-directory)))
