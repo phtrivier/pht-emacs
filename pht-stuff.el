@@ -4,6 +4,12 @@
 (defun add-load-path-dir (dir-to-add)
   (add-to-list 'load-path (expand-file-name (concat pht-lisp-dir "/" dir-to-add))))
 
+;; This tells emacs to use custom.el to
+;; store customizations made through 'customize' interface
+(setq custom-file (expand-file-name (concat pht-lisp-dir "/custom.el")))
+(load custom-file 'noerror)
+
+;; ---------------------------------
 ;; Here comes all my actual packages
 
 (require 'ruby-stuff)
@@ -14,5 +20,7 @@
 (require 'scala-stuff)
 (require 'stevey-stuff)
 (require 'misc-stuff)
+
+;; Next package comes here ... 
 
 (provide 'pht-stuff)
