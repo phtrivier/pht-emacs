@@ -20,6 +20,7 @@
 (require 'scala-stuff)
 (require 'stevey-stuff)
 (require 'misc-stuff)
+(require 'color-stuff)
 
 ;; Next package comes here ... 
 
