@@ -22,5 +22,7 @@
 (require 'stevey-stuff)
 (require 'misc-stuff)
 (require 'lua-stuff)
+(require 'color-stuff)
+;; Next package comes here ... 
 
 (provide 'pht-stuff)
