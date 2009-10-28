@@ -11,16 +11,16 @@
 
 ;; ---------------------------------
 ;; Here comes all my actual packages
+;; Select as appropriate .. 
 
 (require 'ruby-stuff)
-(require 'scons-stuff)
+;;(require 'scons-stuff)
 ;;(require 'clojure-stuff)
 (require 'org-stuff)
-;; (require 'boots-puzzle-stuff)
-(require 'scala-stuff)
+;;(require 'boots-puzzle-stuff)
+;;(require 'scala-stuff)
 (require 'stevey-stuff)
 (require 'misc-stuff)
-
-;; Next package comes here ... 
+(require 'lua-stuff)
 
 (provide 'pht-stuff)
