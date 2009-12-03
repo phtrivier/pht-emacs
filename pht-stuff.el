@@ -23,6 +23,8 @@
 (require 'misc-stuff)
 (require 'lua-stuff)
 (require 'color-stuff)
+(require 'magit-stuff)
+(require 'muse-stuff)
 ;; Next package comes here ... 
 
 (provide 'pht-stuff)
