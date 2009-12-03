@@ -9,6 +9,9 @@
 (setq custom-file (expand-file-name (concat pht-lisp-dir "/custom.el")))
 (load custom-file 'noerror)
 
+;; I want an emacs-server started if possible
+(server-start)
+
 ;; ---------------------------------
 ;; Here comes all my actual packages
 ;; Select as appropriate .. 
