@@ -15,7 +15,7 @@
 ;; ---------------------------------
 ;; Here comes all my actual packages
 ;; Select as appropriate .. 
-
+(require 'cedet-stuff)
 (require 'ruby-stuff)
 ;;(require 'scons-stuff)
 ;;(require 'clojure-stuff)
@@ -28,6 +28,7 @@
 (require 'color-stuff)
 (require 'magit-stuff)
 (require 'muse-stuff)
+(require 'nsi-stuff)
 ;; Next package comes here ... 
 
 (provide 'pht-stuff)
