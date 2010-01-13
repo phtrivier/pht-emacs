@@ -4,6 +4,10 @@
 (defun add-load-path-dir (dir-to-add)
   (add-to-list 'load-path (expand-file-name (concat pht-lisp-dir "/" dir-to-add))))
 
+(defun open-pht-emacs ()
+  (interactive)
+  (find-file (concat pht-lisp-dir "/pht-stuff.el")))
+
 ;; This tells emacs to use custom.el to
 ;; store customizations made through 'customize' interface
 (setq custom-file (expand-file-name (concat pht-lisp-dir "/custom.el")))
@@ -15,7 +19,7 @@
 ;; ---------------------------------
 ;; Here comes all my actual packages
 ;; Select as appropriate .. 
-(require 'cedet-stuff)
+;;(require 'cedet-stuff)
 (require 'ruby-stuff)
 ;;(require 'scons-stuff)
 ;;(require 'clojure-stuff)
@@ -28,7 +32,8 @@
 (require 'color-stuff)
 (require 'magit-stuff)
 (require 'muse-stuff)
-(require 'nsi-stuff)
+(require 'cpp-stuff)
+;;(require 'nsi-stuff)
 ;; Next package comes here ... 
 
 (provide 'pht-stuff)
