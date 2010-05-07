@@ -11,7 +11,7 @@
 ;; This tells emacs to use custom.el to
 ;; store customizations made through 'customize' interface
 (setq custom-file (expand-file-name (concat pht-lisp-dir "/custom.el")))
-(load custom-file 'noerror)
+(load custom-file)
 
 ;; I want an emacs-server started if possible
 (server-start)
@@ -19,6 +19,7 @@
 ;; ---------------------------------
 ;; Here comes all my actual packages
 ;; Select as appropriate .. 
+(require 'color-stuff)
 (require 'cedet-stuff)
 (require 'ruby-stuff)
 ;; ;;(require 'scons-stuff)
@@ -34,7 +35,6 @@
 (require 'cpp-stuff)
 (require 'nsi-stuff)
 (require 'actionscript-mode)
-(require 'color-stuff)
 ;; Next package comes here ... 
 
 (provide 'pht-stuff)
