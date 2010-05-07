@@ -19,21 +19,22 @@
 ;; ---------------------------------
 ;; Here comes all my actual packages
 ;; Select as appropriate .. 
-;;(require 'cedet-stuff)
+(require 'cedet-stuff)
 (require 'ruby-stuff)
-;;(require 'scons-stuff)
-;;(require 'clojure-stuff)
+;; ;;(require 'scons-stuff)
+;; ;;(require 'clojure-stuff)
 (require 'org-stuff)
-;;(require 'boots-puzzle-stuff)
-;;(require 'scala-stuff)
+;; ;;(require 'boots-puzzle-stuff)
+;; ;;(require 'scala-stuff)
 (require 'stevey-stuff)
 (require 'misc-stuff)
 (require 'lua-stuff)
-(require 'color-stuff)
 (require 'magit-stuff)
 (require 'muse-stuff)
 (require 'cpp-stuff)
-;;(require 'nsi-stuff)
+(require 'nsi-stuff)
+(require 'actionscript-mode)
+(require 'color-stuff)
 ;; Next package comes here ... 
 
 (provide 'pht-stuff)
