@@ -8,11 +8,6 @@
   (interactive)
   (find-file (concat pht-lisp-dir "/pht-stuff.el")))
 
-;; This tells emacs to use custom.el to
-;; store customizations made through 'customize' interface
-(setq custom-file (expand-file-name (concat pht-lisp-dir "/custom.el")))
-(load custom-file)
-
 ;; I want an emacs-server started if possible
 (server-start)
 
@@ -20,7 +15,7 @@
 ;; Here comes all my actual packages
 ;; Select as appropriate .. 
 (require 'color-stuff)
-(require 'cedet-stuff)
+;;(require 'cedet-stuff)
 (require 'ruby-stuff)
 ;; ;;(require 'scons-stuff)
 ;; ;;(require 'clojure-stuff)
@@ -32,9 +27,15 @@
 (require 'lua-stuff)
 (require 'magit-stuff)
 (require 'muse-stuff)
-(require 'cpp-stuff)
-(require 'nsi-stuff)
-(require 'actionscript-mode)
+;;(require 'cpp-stuff)
+;;(require 'nsi-stuff)
+;;(require 'actionscript-mode)
+(require 'js-stuff)
 ;; Next package comes here ... 
+
+;; This tells emacs to use custom.el to
+;; store customizations made through 'customize' interface
+(setq custom-file (expand-file-name (concat pht-lisp-dir "/custom.el")))
+(load custom-file)
 
 (provide 'pht-stuff)
